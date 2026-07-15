@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     libnspr4 \
     libdbus-1-3 \
     libatk1.0-0 \
+    libatk-bridge2.0-0 \
     libxcomposite1 \
     libxdamage1 \
     libxext6 \
@@ -16,6 +17,12 @@ RUN apt-get update && apt-get install -y \
     libxrender1 \
     libgbm1 \
     libdrm2 \
+    libxcursor1 \
+    libxi6 \
+    libgtk-3-0 \
+    libgdk-pixbuf2.0-0 \
+    libasound2 \
+    libpulse0 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
