@@ -1,1 +1,2 @@
-web: gunicorn --bind 0.0.0.0:5000 app:app
+release: playwright install
+web: gunicorn app:app --bind 0.0.0.0:5000
